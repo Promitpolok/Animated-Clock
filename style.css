@@ -1,0 +1,45 @@
+body {
+    margin: 0;
+    padding: 0;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: linear-gradient(to bottom, #0f2027, #203a43, #2c5364); /* Cool gradient */
+    font-family: 'Arial', sans-serif;
+    color: white;
+    overflow: hidden;
+}
+
+.container {
+    text-align: center;
+    background: rgba(0, 0, 0, 0.4);
+    padding: 20px 40px;
+    border-radius: 10px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.5);
+}
+
+.clock {
+    font-size: 4rem;
+    letter-spacing: 0.1em;
+}
+
+.time span {
+    display: inline-block;
+    transition: transform 0.2s ease, opacity 0.2s ease;
+}
+
+.date {
+    margin-top: 10px;
+    font-size: 1.5rem;
+    color: #ccc;
+}
+
+@media (max-width: 600px) {
+    .clock {
+        font-size: 2.5rem;
+    }
+    .date {
+        font-size: 1rem;
+    }
+}
